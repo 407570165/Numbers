@@ -33,13 +33,17 @@ private TextView number;
         });
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+    public void zero(View view){
+       int i=0;
+       number.setText(Integer.toString(i));
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -55,7 +59,5 @@ private TextView number;
         return super.onOptionsItemSelected(item);
 
     }
-    public void zero(View view){
-        number.setText("0");
-    }
+
 }
